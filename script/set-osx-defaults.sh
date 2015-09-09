@@ -9,4 +9,9 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # AirDrop over every interface
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
+# Show Bluetooth icon in menu bar
+open '/System/Library/CoreServices/Menu Extras/Bluetooth.menu'
+
+
+
 echo "Done!"

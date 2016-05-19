@@ -32,8 +32,16 @@ set ofu=syntaxcomplete#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set t_Co=256              " enable 256-color mode.
-syntax enable             " enable syntax highlighting (previously syntax on).
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
+
+"set t_Co=256              " enable 256-color mode.
+"syntax enable             " enable syntax highlighting (previously syntax on).
+"set background=dark
+"hi Normal          ctermfg=252 ctermbg=233
 "colorscheme molokai       " set colorscheme
 
 " Prettify JSON files
@@ -52,7 +60,7 @@ augroup END
 " Highlight characters that go over 80 columns (by drawing a border on the 81st)
 if exists('+colorcolumn')
   set colorcolumn=81
-  highlight ColorColumn ctermbg=red
+  highlight ColorColumn ctermbg=grey
 else
   highlight OverLength ctermbg=red ctermfg=white guibg=#592929
   match OverLength /\%81v.\+/

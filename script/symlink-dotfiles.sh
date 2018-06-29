@@ -1,4 +1,4 @@
-files="vimrc gitconfig"
+files="vimrc vim gitconfig"
 
 dir=~/dotfiles
 
